@@ -1,0 +1,671 @@
+<html lang="zxx" class=""><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- color of address bar in mobile browser -->
+	<meta name="theme-color" content="#28292C">
+	<!-- favicon  -->
+	<link rel="shortcut icon" href="img/light/favicon.png" type="image/x-icon">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+	<!-- font awesome css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- swiper css -->
+	<link rel="stylesheet" href="css/plugins/swiper.min.css">
+	<!-- fancybox css -->
+	<link rel="stylesheet" href="css/plugins/fancybox.min.css">
+	<!-- mapbox css -->
+	<link href="css/plugins/mapbox-style.css" rel="stylesheet">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style-light.css">
+
+	<title>Raj And Rajora</title>
+
+<style id="smooth-scrollbar-style">
+[data-scrollbar] {
+  display: block;
+  position: relative;
+}
+
+.scroll-content {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.scrollbar-track {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  background: rgba(222, 222, 222, .75);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: opacity 0.5s 0.5s ease-out;
+          transition: opacity 0.5s 0.5s ease-out;
+}
+.scrollbar-track.show,
+.scrollbar-track:hover {
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.scrollbar-track-x {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+}
+.scrollbar-track-y {
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100%;
+}
+.scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 4px;
+}
+</style></head>
+
+<body cz-shortcut-listen="true" style="">
+
+	<div class="mry-app">
+
+		<!-- preloader -->
+		<div class="mry-preloader">
+			<div class="mry-preloader-content">
+				<img class="mry-logo mry-mb-20" src="img/light/logo.svg" alt="Raj And Rajora">
+				<div class="mry-loader-bar">
+					<div class="mry-loader" style="width: 100%;"></div>
+				</div>
+				<div class="mry-label">Please wait</div>
+			</div>
+		</div>
+		<!-- preloader end -->
+
+		<!-- cursor -->
+		<div class="mry-magic-cursor">
+			<div class="mry-ball" style="top: 216px; left: 622px; transform: matrix(1, 0, 0, 1, 0, 0); opacity: 0.5;">
+				<div class="mry-loader" style="width: 100%;">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+						<path d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+							<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform>
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<!-- cursor end -->
+
+		<!-- top panel -->
+		<div class="mry-top-panel">
+			<div class="mry-logo-frame">
+				<a href="index.html" class="mry-default-link mry-anima-link">
+					<img class="mry-logo" src="img/light/logo.svg" alt="Raj And Rajora">
+				</a>
+			</div>
+			<div class="mry-menu-button-frame">
+				<div class="mry-label">Menu</div>
+
+				<div class="mry-menu-btn mry-magnetic-link">
+					<div class="mry-burger mry-magnetic-object" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- top panel end -->
+
+		<!-- menu -->
+		<div class="mry-menu">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-md-4">
+						<nav id="mry-dynamic-menu">
+							<ul>
+								<li class="menu-item menu-item-has-children"><a href="#." class="mry-default-link">Home</a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="index.html" class="mry-anima-link mry-default-link">Index</a></li>
+										<!-- <li class="menu-item"><a href="fs-slider.html" class="mry-anima-link mry-default-link">Full width slider</a></li> -->
+									</ul>
+								</li>
+								<li class="menu-item current-menu-item"><a href="about.html" class="mry-anima-link mry-default-link">About</a></li>
+								<li class="menu-item menu-item-has-children"><a href="#." class="mry-default-link">Works</a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="portfolio-grid-1.html" class="mry-anima-link mry-default-link">All Projects</a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="contact.html" class="mry-anima-link mry-default-link">Contact</a></li>
+							</ul>
+						</nav>
+
+					</div>
+					<div class="col-md-4">
+						<div class="mry-info-box-frame">
+							<div class="mry-info-box">
+								<div class="mry-mb-20">
+									<div class="mry-label mry-mb-5">Country:</div>
+									<div class="mry-text">Canada</div>
+								</div>
+								<div class="mry-mb-20">
+									<div class="mry-label mry-mb-5">City:</div>
+									<div class="mry-text">Toronto</div>
+								</div>
+								<div class="mry-mb-20">
+									<div class="mry-label mry-mb-5">Adress:</div>
+									<div class="mry-text">HTGS 4456 North Av.</div>
+								</div>
+								<div class="mry-mb-20">
+									<div class="mry-label mry-mb-5">Email:</div>
+									<a class="mry-text mry-default-link" href="mailto:Raj And Rajora.inbox@mail.com">Raj And Rajora.inbox@mail.com</a>
+								</div>
+								<div>
+									<div class="mry-label mry-mb-5">Phone:</div>
+									<a class="mry-text mry-default-link" href="#.">+4 9(054) 996 84 25</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- menu end -->
+
+		<div class="transition-fade">
+			<div class="mry-content-frame" id="scroll" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;"><div class="scroll-content" style="transform: translate3d(0px, 0px, 0px);">
+				<canvas class="mry-dots" style="display: none" width="1017" height="842"></canvas>
+
+				<div class="mry-head-bg">
+					<img src="img/light/projects/prjct-7/1.jpg" alt="background">
+					<div class="mry-bg-overlay"></div>
+				</div>
+
+				<div class="mry-banner mry-p-140-0">
+					<div class="container">
+						<div class="mry-main-title mry-title-center">
+							<div class="mry-subtitle mry-mb-20 mry-fo" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">About Us</div>
+							<h1 class="mry-mb-20 mry-fo" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Design is Intelligence<br><span class="mry-border-text">Made Visible.</span><span class="mry-animation-el"></span></h1>
+							<div class="mry-text mry-fo" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><b>Alina Wheeler</b> - Graphic Designer, Art Director.</div>
+							<div class="mry-scroll-hint-frame">
+								<a class="mry-scroll-hint mry-smooth-scroll mry-magnetic-link mry-fo" href="#mry-anchor" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+									<span class="mry-magnetic-object" style="transform: matrix(1, 0, 0, 1, 0, 0);"></span>
+								</a>
+								<div class="mry-label mry-fo" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Scroll Down</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- about -->
+				<div class="mry-about mry-p-100-100">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+
+								<div class="mry-mb-100 mry-text-center">
+									<div class="mry-numbering mry-fo" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+										<div class="mry-border-text">01</div>
+										<div class="mry-subtitle">Who We Are</div>
+									</div>
+									<h3 class="mry-mb-40 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Raj And Rajora is an award winning full service marketing agency</h3>
+									<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We has expertise in branding and brand strategy, website design, social media management, content marketing, pay-per-click advertising
+										(PPC) and search engine optimization (SEO). As a leading
+										website design company in Toronto we have expertise in WordPress design and development, e-commerce website design and development, Shopify website design and
+										development and cater <br>to SMB and enterprise clients.</p>
+								</div>
+
+							</div>
+
+							<div class="col-lg-8">
+								<div class="mry-mb-100 mry-text-center">
+									<div class="mry-numbering mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+										<div class="mry-border-text">02</div>
+										<div class="mry-subtitle">What wy do?</div>
+									</div>
+									<h3 class="mry-mb-40 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Relationships come first, everything <br>else follows</h3>
+									<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We take pride in having strong relationships with our clients. To us, business is more than just a handshake and a signed contract.
+										Through our full suite of services, we help businesses reach
+										their goals and
+										maximize return on investment while focusing on transparency and communication.</p>
+									<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Contact us today for your <a href="contact.html" class="mry-default-link">free consultation</a>.</p>
+
+								</div>
+							</div>
+
+							<div class="col-lg-10">
+
+								<div class="mry-about-video mry-mb-100 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+									<div class="mry-video-cover-frame">
+										<img class="mry-video-cover" src="img/light/content/video.jpg" alt="banner">
+										<div class="mry-cover-overlay"></div>
+										<div class="mry-play-button mry-magnetic-link">
+											<a class="mry-magnetic-object" data-fancybox="" href="https://vimeo.com/25428289" style="transform: matrix(1, 0, 0, 1, 0, 0);"><i class="fas fa-play"></i></a>
+										</div>
+										<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-8">
+
+								<div class="mry-numbering mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+									<div class="mry-border-text">03</div>
+									<div class="mry-subtitle">Services</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-6">
+
+										<div class="mry-text-center mry-mb-100">
+											<h4 class="mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Website design<br>&amp; Development</h4>
+											<p class="mry-text mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Our work empowers businesses to create unique user experiences that engage, captivate, and deliver results. Need your
+												website designed in Toronto?</p>
+											<div class="mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);"><a href="contact.html" class="mry-link mry-default-link">Order a service</a></div>
+										</div>
+
+									</div>
+									<div class="col-lg-6">
+
+										<div class="mry-text-center mry-mb-100">
+											<h4 class="mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Creative<br>&amp; Graphic Design</h4>
+											<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We are experienced storytellers, with a knack for incorporating brand insights into compelling designs for use in digital and
+												print advertising campaigns.</p>
+											<div class="mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);"><a href="contact.html" class="mry-link mry-default-link">Order a service</a></div>
+										</div>
+
+									</div>
+									<div class="col-lg-6">
+
+										<div class="mry-text-center mry-mb-100">
+											<h4 class="mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Brand Marketing<br>&amp; Strategy</h4>
+											<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We help businesses construct their identity and develop a tailored and concise brand strategy that will appeal to your target
+												audience.</p>
+											<div class="mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);"><a href="contact.html" class="mry-link mry-default-link">Order a service</a></div>
+										</div>
+
+
+									</div>
+									<div class="col-lg-6">
+
+										<div class="mry-text-center mry-mb-100">
+											<h4 class="mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Video Production<br>&amp; Marketing</h4>
+											<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Our video production team films, produces, and edits content that will raise brand awareness, engagement, and conversion rates.
+											</p>
+											<div class="mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);"><a href="contact.html" class="mry-link mry-default-link">Order a service</a></div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+
+								<div class="mry-main-title mry-title-center mry-p-0-40">
+									<div class="mry-numbering mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+										<div class="mry-border-text">04</div>
+										<div class="mry-subtitle">Employees</div>
+									</div>
+									<h2 class="mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Our Amazing Team</h2>
+									<div class="mry-arrows mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+										<div class="mry-sl-nav">
+											<div class="mry-prev mry-button-team-prev mry-magnetic-link" tabindex="0" role="button" aria-label="Previous slide"><span class="mry-magnetic-object" style="transform: matrix(1, 0, 0, 1, 0, 0);"><i class="fas fa-arrow-left"></i></span></div>
+											<div class="mry-next mry-button-team-next mry-magnetic-link" tabindex="0" role="button" aria-label="Next slide"><span class="mry-magnetic-object" style="transform: matrix(1, 0, 0, 1, 0, 0);"><i class="fas fa-arrow-right"></i></span></div>
+										</div>
+										<div class="mry-label mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Slider Navigation</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-lg-10">
+
+								<div class="swiper-container mry-team-slider mry-mb-100 swiper-container-horizontal">
+									<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-720px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 210px; margin-right: 30px;">
+
+											<div class="mry-team-member mry-text-center">
+												<div class="mry-member-photo-frame mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<img src="img/light/team/team-2.jpg" alt="Team member">
+													<div class="mry-photo-overlay"></div>
+													<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+												</div>
+												<h4 class="mry-mb-10 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Paul Trueman</h4>
+												<p class="mry-text mry-simple-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">UI/UX Designer</p>
+											</div>
+
+										</div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 210px; margin-right: 30px;">
+
+											<div class="mry-team-member mry-text-center">
+												<div class="mry-member-photo-frame mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<img src="img/light/team/team-3.jpg" alt="Team member">
+													<div class="mry-photo-overlay"></div>
+													<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+												</div>
+												<h4 class="mry-mb-10 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Mike Oldman</h4>
+												<p class="mry-text mry-simple-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">UI/UX Designer</p>
+											</div>
+
+										</div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="3" style="width: 210px; margin-right: 30px;">
+
+											<div class="mry-team-member mry-text-center">
+												<div class="mry-member-photo-frame mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<img src="img/light/team/team-4.jpg" alt="Team member">
+													<div class="mry-photo-overlay"></div>
+													<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+												</div>
+												<h4 class="mry-mb-10 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Emma Newman</h4>
+												<p class="mry-text mry-simple-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">UI/UX Designer</p>
+											</div>
+
+										</div>
+										<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 210px; margin-right: 30px;">
+
+											<div class="mry-team-member mry-text-center">
+												<div class="mry-member-photo-frame mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<img src="img/light/team/team-1.jpg" alt="Team member">
+													<div class="mry-photo-overlay"></div>
+													<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+												</div>
+												<h4 class="mry-mb-10 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Viktoria Freeman</h4>
+												<p class="mry-text mry-simple-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">UI/UX Designer</p>
+											</div>
+
+										</div>
+										<div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 210px; margin-right: 30px;">
+
+											<div class="mry-team-member mry-text-center">
+												<div class="mry-member-photo-frame mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<img src="img/light/team/team-2.jpg" alt="Team member">
+													<div class="mry-photo-overlay"></div>
+													<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+												</div>
+												<h4 class="mry-mb-10 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Paul Trueman</h4>
+												<p class="mry-text mry-simple-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">UI/UX Designer</p>
+											</div>
+
+										</div>
+										<div class="swiper-slide" data-swiper-slide-index="2" style="width: 210px; margin-right: 30px;">
+
+											<div class="mry-team-member mry-text-center">
+												<div class="mry-member-photo-frame mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<img src="img/light/team/team-3.jpg" alt="Team member">
+													<div class="mry-photo-overlay"></div>
+													<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+												</div>
+												<h4 class="mry-mb-10 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Mike Oldman</h4>
+												<p class="mry-text mry-simple-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">UI/UX Designer</p>
+											</div>
+
+										</div>
+										<div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="3" style="width: 210px; margin-right: 30px;">
+
+											<div class="mry-team-member mry-text-center">
+												<div class="mry-member-photo-frame mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<img src="img/light/team/team-4.jpg" alt="Team member">
+													<div class="mry-photo-overlay"></div>
+													<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+												</div>
+												<h4 class="mry-mb-10 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Emma Newman</h4>
+												<p class="mry-text mry-simple-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">UI/UX Designer</p>
+											</div>
+
+										</div>
+									<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 210px; margin-right: 30px;">
+
+											<div class="mry-team-member mry-text-center">
+												<div class="mry-member-photo-frame mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<img src="img/light/team/team-1.jpg" alt="Team member">
+													<div class="mry-photo-overlay"></div>
+													<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+												</div>
+												<h4 class="mry-mb-10 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Viktoria Freeman</h4>
+												<p class="mry-text mry-simple-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">UI/UX Designer</p>
+											</div>
+
+										</div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 210px; margin-right: 30px;">
+
+											<div class="mry-team-member mry-text-center">
+												<div class="mry-member-photo-frame mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<img src="img/light/team/team-2.jpg" alt="Team member">
+													<div class="mry-photo-overlay"></div>
+													<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+												</div>
+												<h4 class="mry-mb-10 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Paul Trueman</h4>
+												<p class="mry-text mry-simple-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">UI/UX Designer</p>
+											</div>
+
+										</div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 210px; margin-right: 30px;">
+
+											<div class="mry-team-member mry-text-center">
+												<div class="mry-member-photo-frame mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<img src="img/light/team/team-3.jpg" alt="Team member">
+													<div class="mry-photo-overlay"></div>
+													<div class="mry-curtain" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+												</div>
+												<h4 class="mry-mb-10 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Mike Oldman</h4>
+												<p class="mry-text mry-simple-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">UI/UX Designer</p>
+											</div>
+
+										</div></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+							</div>
+							<div class="col-lg-8">
+
+								<div class="mry-mb-100 mry-text-center">
+									<div class="mry-numbering mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+										<div class="mry-border-text">05</div>
+										<div class="mry-subtitle">We can become partners</div>
+									</div>
+									<h3 class="mry-mb-40 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We’re here to help, let us take it from here.</h3>
+									<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We know that transparency is non-negotiable and that strong communication is the foundation of any great relationship. With the knowledge
+										and expertise at Brand &amp; Mortar we are confident that we
+										can make an
+										impact on your business and its bottom line.</p>
+								</div>
+
+							</div>
+							<div class="col-lg-12">
+
+								<div class="mry-main-title mry-title-center mry-p-0-40">
+									<div class="mry-numbering mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+										<div class="mry-border-text">06</div>
+										<div class="mry-subtitle">Testimonials</div>
+									</div>
+									<h2 class="mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Our customers say</h2>
+									<div class="mry-arrows">
+										<div class="mry-sl-nav mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+											<div class="mry-prev mry-button-testimonials-prev mry-magnetic-link" tabindex="0" role="button" aria-label="Previous slide"><span class="mry-magnetic-object" style="transform: matrix(1, 0, 0, 1, 0, 0);"><i class="fas fa-arrow-left"></i></span></div>
+											<div class="mry-next mry-button-testimonials-next mry-magnetic-link" tabindex="0" role="button" aria-label="Next slide"><span class="mry-magnetic-object" style="transform: matrix(1, 0, 0, 1, 0, 0);"><i class="fas fa-arrow-right"></i></span></div>
+										</div>
+										<div class="mry-label mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Slider Navigation</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-lg-8">
+
+								<div class="swiper-container mry-testimonials-slider swiper-container-horizontal">
+									<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-720px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 690px; margin-right: 30px;">
+
+											<div class="mry-title-center">
+												<img src="img/light/clients/c-3.jpg" alt="client" class="mry-reviewer mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+												<h4 class="mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Viktoria Freeman</h4>
+												<div class="mry-subtitle mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Creative director</div>
+												<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We were very impressed with the progressive campaign and thought it spoke volumes to the reality of businesses. We have been
+													working our way into the Toronto area for almost a year now and ready to
+													gain
+													some traction in that city.</p>
+												<ul class="mry-star-rate mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li class="mry-empty"><i class="fas fa-star"></i></li>
+												</ul>
+											</div>
+
+										</div>
+										<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 690px; margin-right: 30px;">
+
+											<div class="mry-title-center">
+												
+												<h4 class="mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Emma Newman</h4>
+												<div class="mry-subtitle mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Creative director</div>
+												<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We evaluated numerous marketing firms and selected Raj And Rajora due to their experience in the solar industry, and the clear
+													understanding of our business objectives that they demonstrated during the
+													evaluation
+													process. </p>
+												<ul class="mry-star-rate mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+												</ul>
+											</div>
+
+										</div>
+										<div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 690px; margin-right: 30px;">
+
+											<div class="mry-title-center">
+												
+												<h4 class="mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Paul Trueman</h4>
+												<div class="mry-subtitle mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Creative director</div>
+												<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We were very impressed with the progressive campaign and thought it spoke volumes to the reality of businesses. We have been
+													working our way into the Toronto area for almost a year now and ready to
+													gain
+													some traction in that city.</p>
+												<ul class="mry-star-rate mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li class="mry-empty"><i class="fas fa-star"></i></li>
+												</ul>
+											</div>
+
+										</div>
+										<div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 690px; margin-right: 30px;">
+
+											<div class="mry-title-center">
+												
+												<h4 class="mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Viktoria Freeman</h4>
+												<div class="mry-subtitle mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Creative director</div>
+												<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We were very impressed with the progressive campaign and thought it spoke volumes to the reality of businesses. We have been
+													working our way into the Toronto area for almost a year now and ready to
+													gain
+													some traction in that city.</p>
+												<ul class="mry-star-rate mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li class="mry-empty"><i class="fas fa-star"></i></li>
+												</ul>
+											</div>
+
+										</div>
+									<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 690px; margin-right: 30px;">
+
+											<div class="mry-title-center">
+												
+												<h4 class="mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Emma Newman</h4>
+												<div class="mry-subtitle mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Creative director</div>
+												<p class="mry-text mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">We evaluated numerous marketing firms and selected Raj And Rajora due to their experience in the solar industry, and the clear
+													understanding of our business objectives that they demonstrated during the
+													evaluation
+													process. </p>
+												<ul class="mry-star-rate mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+													<li><i class="fas fa-star"></i></li>
+												</ul>
+											</div>
+
+										</div></div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- about end -->
+
+				<!-- footer -->
+				<footer class="mry-footer">
+					<div class="container">
+						<div class="mry-main-title mry-title-center mry-p-0-100">
+							<div class="mry-subtitle mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Call to action</div>
+							<h2 class="mry-h1 mry-mb-20 mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Do you have <span class="mry-border-text">a project?</span></h2>
+							<div class="mry-text mry-mb-30  mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Asperiores, cupiditate?</div>
+							<div class="mry-fo" style="opacity: 0; transform: matrix(0.98, 0, 0, 0.98, 0, 50);">
+								<a href="contact.html" class="mry-anima-link mry-btn mry-btn-color mry-default-link">Let's discuss</a>
+								<a href="portfolio-grid-1.html" class="mry-anima-link  mry-btn-text mry-default-link">Portfolio</a>
+							</div>
+						</div>
+					</div>
+					<div class="mry-footer-copy">
+						<div class="container">
+							<div>Raj And Rajora © early 2021</div>
+							<ul class="mry-social">
+								<li><a href="#."><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#."><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#."><i class="fab fa-behance"></i></a></li>
+								<li><a href="#."><i class="fab fa-dribbble"></i></a></li>
+							</ul>
+							<div>By: <a href="https://piyushdev.xyz/" class="mry-default-link"
+								target="_blank">Piyush Puniya</a></div>
+						</div>
+					</div>
+				</footer>
+				<!-- footer end -->
+
+				<div class="mry-head-bg mry-head-bottom">
+					<img src="img/light/projects/prjct-5/1.jpg" alt="background">
+					<div class="mry-bg-overlay"></div>
+				</div>
+
+			</div><div class="scrollbar-track scrollbar-track-x" style="display: none;"><div class="scrollbar-thumb scrollbar-thumb-x" style="width: 814px; transform: translate3d(0px, 0px, 0px);"></div></div><div class="scrollbar-track scrollbar-track-y" style="display: block;"><div class="scrollbar-thumb scrollbar-thumb-y" style="height: 75.4361px; transform: translate3d(0px, 0px, 0px) scale3d(1, 0.998519, 1); transform-origin: center top;"></div></div></div>
+
+		</div>
+
+	</div>
+
+	<!-- jquery js -->
+	<script src="js/plugins/jquery.min.js"></script>
+	<!-- tween max js -->
+	<script src="js/plugins/tween-max.min.js"></script>
+	<!-- scroll magic js -->
+	<script src="js/plugins/scroll-magic.js"></script>
+	<!-- scroll magic gsap plugin js -->
+	<script src="js/plugins/scroll-magic-gsap-plugin.js"></script>
+	<!-- swiper js -->
+	<script src="js/plugins/swiper.min.js"></script>
+	<!-- isotope js -->
+	<script src="js/plugins/isotope.min.js"></script>
+	<!-- fancybox js -->
+	<script src="js/plugins/fancybox.min.js"></script>	
+	<!-- mapbox js -->
+	<script src="js/plugins/mapbox.min.js"></script>
+	<!-- smooth scrollbar js -->
+	<script src="js/plugins/smooth-scrollbar.min.js"></script>
+	<!-- overscroll js -->
+	<script src="js/plugins/overscroll.min.js"></script>
+	<!-- canvas js -->
+	<script src="js/plugins/canvas.js"></script>
+	<!-- parsley js -->
+	<script src="js/plugins/parsley.min.js"></script>
+	<!-- main js -->
+	<script src="js/main.js"></script>
+
+
+
+</body></html>
